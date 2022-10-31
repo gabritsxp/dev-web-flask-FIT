@@ -1,0 +1,320 @@
+{% block sobre %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{{ url_for('static',filename='sobre_o_curso/img/imagens')}}"
+    />
+    <title>Pagina Sobre o Curso</title>
+    <style>
+      body {
+        font-family: Montserrat, sans-serif;
+        font-size: 15px;
+        font-weight: 300;
+        color: #ececec;
+        background: #00050b;
+        line-height: 2;
+        letter-spacing: 0;
+        max-height: 1000px;
+        max-width: 1220px;
+      }
+      p {
+        color: #fff;
+      }
+      h2 {
+        color: #0062f8;
+      }
+      h3 {
+        font-size: 14px;
+        margin: 5px 5px 5px 0px;
+      }
+      tbody {
+        background-color: #122127;
+      }
+      td {
+        border-top: 1px solid grey;
+      }
+      h5 {
+        margin: 8px;
+      }
+
+      .fundo {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 58% 48%;
+        gap: 20px;
+        margin-left: 84px;
+      }
+      .primeira-coluna {
+        background-color: #0d181d;
+        padding: 25px !important;
+      }
+      .detail {
+        background-color: #0062f8;
+        color: #0062f8;
+        font-size: 2px;
+        border: none;
+        padding-right: 40px;
+        position: absolute;
+        z-index: 5;
+        bottom: 900px;
+      }
+      .segunda-coluna {
+        grid-column: 2;
+      }
+      .titulo-academico {
+        font-weight: 500;
+        color: #116fff;
+        font-size: 20px;
+      }
+      .periodo {
+        color: #0062f8;
+        font-weight: bold;
+      }
+      .duracao-modalidade {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: start;
+        width: 50%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      .silhueta {
+        height: 41px;
+      }
+      .campus {
+        display: grid;
+        grid-template-columns: 0.1fr 2fr;
+        grid-template-rows: 1;
+      }
+      .localizacao {
+        grid-column: 2;
+        height: auto;
+        color: #0062f8;
+        font-weight: bold;
+      }
+      .pin {
+        margin-top: 25px;
+        padding-right: 15px;
+      }
+      .futuro-titles {
+        margin-top: 46px;
+      }
+      .investimentos {
+        display: grid;
+        background-color: #011219;
+        width: 50%;
+      }
+      .periodo-list {
+        font-weight: bold;
+        margin-left: 4px;
+      }
+      .price {
+        color: #0062f8 !important;
+        font-weight: 600 !important;
+        font-size: 20px;
+      }
+      .descont {
+        color: darkgrey;
+      }
+      .inscrevase {
+        display: grid;
+        justify-content: center;
+        padding: 20px;
+      }
+      .inscreva-button {
+        border-radius: 50px;
+        font-size: 1.5em;
+        font-weight: 700;
+        padding: 10px 25px;
+        border: none;
+        color: #fff;
+        cursor: pointer;
+        background: #f40946;
+        display: inline-block;
+        text-align: center;
+        line-height: 1;
+        text-shadow: 2px 1px rgb(0 0 0 / 20%);
+      }
+      .transferência {
+        display: grid;
+        justify-content: center;
+        padding: 0px;
+        margin: 0px;
+        border: 0px;
+      }
+      .transferencia {
+        color: #fff;
+      }
+      .mais-infos {
+        display: grid;
+        justify-content: center;
+        width: 50%;
+        margin-top: 28px;
+      }
+      .mais-infos-button {
+        background: #ff5722;
+        font-size: 1em;
+        padding: 10px;
+        border-radius: 8px;
+        margin-left: 15px;
+        color: #fff;
+        font-weight: 600;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="fundo">
+      <section class="primeira-coluna">
+        <h2>SOBRE O CURSO</h2>
+        <span class="detail">.</span>
+
+        <p>
+          O curso de Análise e Desenvolvimento de Sistemas da Faculdade Impacta
+          foi reconhecido pelo ENADE/MEC como um dos melhores da cidade de São
+          Paulo.
+        </p>
+        <p>
+          Com a transformação digital e a área de tecnologia sempre em alta, o
+          curso forma um profissional que possa se envolver em todas as etapas
+          do projeto de sistemas de software, desde concepção, análise, projeto,
+          teste, gestão, implantação e manutenção de sistemas de informação.
+        </p>
+        <p>
+          Atualmente, as carreiras mais demandadas pelo mercado de trabalho são
+          para desenvolvedor web, mobile e a Internet das Coisas (IoT), além de
+          profissionais com conhecimento em DevOps (Ambiente de Operação e
+          Desenvolvimento).
+        </p>
+        <p>
+          O profissional de DevOps precisa ter habilidades para fundir
+          desenvolvimento e implantação de aplicativos em um processo
+          automatizado, de entrega contínua, em que as responsabilidades são
+          compartilhadas entre equipe de operação e equipe de desenvolvimento,
+          facilitando o desenvolvimento, integração, entrega, processos de
+          monitoramento contínuos de software e a gestão da infraestrutura de
+          TI.
+        </p>
+        <p>
+          Para o trabalho do profissional de desenvolvimento web, mobile e IOT,
+          aprende-se a programar em linguagens de programação ou marcação, tais
+          como: HTML, CSS, Javascript e Python, assim como frameworks
+          relacionados e banco de dados com SQL, para criação de aplicativos
+          para sites, aplicativos móveis e IoT.
+        </p>
+        <p>
+          Os desenvolvedores precisam ainda entender os requisitos de negócio do
+          cliente e fornecer recomendações para melhorar os aplicativos ou
+          sistemas de software, a fim de garantir que atendam às necessidades
+          dos usuários ou clientes.
+        </p>
+        <p>
+          Esses diferenciais na formação de habilidades e competências do nosso
+          curso permitem aos alunos trabalharem em empresas das mais variadas
+          áreas de aplicações, ocupando carreiras como de analista de sistemas,
+          analista de requisitos, analista de negócio, desenvolvedor web, mobile
+          ou IoT e DevOps, analista de teste e gerente de projeto.
+        </p>
+      </section>
+      <section class="segunda-coluna">
+        <div class="titulo-academico">TECNÓLOGO</div>
+        <div class="periodos"></div>
+        <div class="descricao-curso">
+          <h3>Período</h3>
+          <div class="periodos">
+            <span class="periodo">Matutino</span>
+            <span>| 08h00 às 11h40 |</span>
+          </div>
+          <div class="periodos">
+            <span class="periodo">Noturno</span>
+            <span>| 19h00 às 22h40 |</span>
+          </div>
+        </div>
+
+        <div class="duracao-modalidade">
+          <div class="duracao">
+            <div class="calendario"></div>
+            <h3>Duração</h3>
+            <div class="periodo">5 Semestres</div>
+          </div>
+
+          <div class="modalidade">
+            <div class="silhueta"></div>
+            <h3>Modalidade</h3>
+            <div class="periodo">Presencial</div>
+          </div>
+        </div>
+
+        <div class="campus">
+          <div class="pin"></div>
+          <div class="info-campus">
+            <h3>Campus</h3>
+            <div class="localizacao">Barra Funda</div>
+          </div>
+        </div>
+
+        <div class="futuro-titles">
+          <h3>QUANTO VOU INVESTIR NO MEU FUTURO?</h3>
+        </div>
+
+        <div class="investimentos">
+          <table>
+            <thead>
+              <tr>
+                <th>Periodo</th>
+                <th>Investimentos</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <span class="periodo-list">Matutino</span>
+                </td>
+                <td>
+                  <i>
+                    De:
+                    <s class="descont">R$ 744,76 preço integral</s>
+                  </i>
+                  <br />
+                  <span class="price">Por R$707,71*</span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <span class="periodo-list">Noturno</span>
+                </td>
+                <td>
+                  <i>
+                    De:
+                    <s class="descont">R$ 840,96 preço integral</s>
+                  </i>
+                  <br />
+                  <span class="price">Por R$798,91*</span>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="inscrevase">
+            <button class="inscreva-button">INSCREVA-SE</button>
+          </div>
+          <div class="transferência">
+            <h5>
+              <a href="" class="transferencia">OU FAÇA SUA TRANSFERÊNCIA</a>
+            </h5>
+          </div>
+        </div>
+
+        <div class="mais-infos">
+          <a href="" class="mais-infos-button">Quer mais informações?</a>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
+{% endblock %}

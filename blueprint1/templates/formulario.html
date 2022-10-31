@@ -1,0 +1,140 @@
+{% block formulario %}
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>formulário</title>
+    <style>
+      body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      div {
+        display: grid;
+        gap: 12px;
+        font-family: inherit;
+      }
+      label {
+        font-weight: bold;
+        color: #4a4a4a;
+        font-size: 0.75em;
+      }
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+      button {
+        padding-top: 0.2em;
+        padding-bottom: 0.2em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        border-radius: 12px;
+        border: 1px solid black;
+        font-weight: bold;
+        background-color: lightcyan;
+      }
+      legend {
+        font-weight: bold;
+      }
+      button:hover {
+        background-color: lightgray;
+      }
+      .buttons {
+        display: block;
+        margin: auto;
+      }
+      .box {
+        border: 1px solid black;
+        max-width: 540px;
+        padding: 10px;
+        box-sizing: border-box;
+        width: 100%;
+        margin: auto;
+        font-family: inherit;
+      }
+      .title {
+        display: grid;
+        justify-content: center;
+      }
+      .limpar {
+        color: darkslategrey;
+        border: 1px solid darkslategrey;
+      }
+      .enviar {
+        color: darkslateblue;
+        border: 1px solid darkslateblue;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="./" method="post">
+      <div class="box">
+        <div class="title">
+          <h1>Fale Conosco</h1>
+        </div>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" />
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" />
+
+        <label for="telefone">Telefone:</label>
+        <input type="number" id="telefone" name="telefone" />
+
+        <label for="assunto">Assunto:</label>
+        <select name="assunto" id="assunto">
+          <option value="">Selecione uma opção</option>
+          <option value="1">Atendimento ao cliente</option>
+          <option value="2">Secretaria de Graduação</option>
+          <option value="3">Secretaria de Pós Graduação</option>
+          <option value="4">Financeiro</option>
+          <option value="5">Ouvidoria</option>
+        </select>
+
+        <label for="mensagem">Mensagem</label>
+        <textarea
+          name="mensagem"
+          id="mensagem"
+          rows="4"
+          placeholder="Digite aqui sua mensagem"
+          minlength="50"
+          maxlength="500"
+        ></textarea>
+
+        <fieldset>
+          <legend for="conheceu">Como nos conheceu?</legend>
+
+          <input
+            type="radio"
+            id="conheceu"
+            value="Google Ads"
+            name="conheceu"
+          />
+          <label for="no">Google Ads</label>
+
+          <input type="radio" id="conheceu" value="Insta" name="conheceu" />
+          <label for="no">Insta</label>
+
+          <input type="radio" id="conheceu" value="PodCasts" name="conheceu" />
+          <label for="no">Podcasts</label>
+
+          <input type="radio" id="conheceu" value="TV" name="conheceu" />
+          <label for="no">Tv</label>
+
+          <input type="radio" id="conheceu" value="Amigos" name="conheceu" />
+          <label for="no">Amigos</label>
+
+          <input type="radio" id="conheceu" value="Outros" name="conheceu" />
+          <label for="yes">Outros</label>
+        </fieldset>
+        <div class="buttons">
+          <button type="reset" class="limpar">Limpar</button>
+          <button type="submit" class="enviar">Enviar</button>
+        </div>
+      </div>
+    </form>
+    <div>{{comunicado}}</div>
+  </body>
+</html>
+{% endblock %}
