@@ -1,6 +1,6 @@
 ## REPOSITÓRIO PARA AS ATIVIDADES DE DEV WEB FLASK FIT :snake:
 
-Para rodar este código basta copiar o seguinte link e clonar no terminal linux:
+Para rodar este código basta copiar o seguinte link e clonar no terminal GIT BASH
 
 ```
 git clone https://github.com/gabritsxp/dev-web-flask-FIT.git
