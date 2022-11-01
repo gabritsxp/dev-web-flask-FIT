@@ -1,10 +1,10 @@
 from flask import render_template
-from blueprint2 import sobre_bp
+from blueprint2 import blueprint2
 
 
-@sobre_bp.route('/')
+@blueprint2.route('/')
 def get_sobre():
     print('chamou o get')
-    return render_template('sobre_o_curso.html')
+    return render_template('blueprint2.html')
 
 

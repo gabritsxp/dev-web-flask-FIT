@@ -1,7 +1,7 @@
 from flask import Blueprint
 
-formulario_bp = Blueprint(
-    'formulario',
+blueprint1 = Blueprint(
+    'blueprint1',
     __name__,
     template_folder='templates'
 )

@@ -1,7 +1,7 @@
 from flask import Blueprint
 
-sobre_bp = Blueprint(
-    'sobre',
+blueprint2 = Blueprint(
+    'blueprint2',
     __name__,
     template_folder='templates'
 )
